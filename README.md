@@ -26,7 +26,7 @@ Melalui aplikasi ini, proses pengajuan surat menjadi lebih praktis, data pendudu
 
 ## Project Goal
 
-Membangun aplikasi RT berbasis web yang terintegrasi untuk meningkatkan efisiensi pengelolaan data dan pelayanan administrasi warga.
+Membangun aplikasi RT berbasis aplikasi mobile yang terintegrasi untuk meningkatkan efisiensi pengelolaan data dan pelayanan administrasi warga.
 
 ## Fitur Checklist
 
