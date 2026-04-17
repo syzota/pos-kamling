@@ -50,7 +50,7 @@ Fitur yang telah berhasil diimplementasikan dalam sistem:
 
 - [x] Manajemen data penduduk (CRUD)
 
-- [x] Pengajuan dan proses surat oleh warga & admin
+- [x] Pengajuan dan proses surat oleh warga dan admin
 
 - [x] Monitoring status surat (tungggu, diproses. dan selesai)
 
