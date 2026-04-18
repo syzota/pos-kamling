@@ -22,62 +22,6 @@ Oleh karena itu, aplikasi ini dikembangkan sebagai solusi digital yang terintegr
 
 Melalui aplikasi ini, proses pengajuan surat menjadi lebih praktis, data penduduk dapat dikelola dengan lebih terstruktur, serta informasi kegiatan dan keuangan RT dapat disampaikan secara transparan kepada seluruh warga.
 
-# RT Digital System
-
-## Project Goal
-
-Membangun aplikasi RT berbasis aplikasi mobile yang terintegrasi untuk meningkatkan efisiensi pengelolaan data dan pelayanan administrasi warga.
-
-## Fitur Checklist
-
-- [x] Kelola data penduduk
-
-- [x] Pengajuan surat pengantar
-
-- [x] Tracking status surat
-
-- [x] Kalender kegiatan RT
-
-- [x] Transparansi dana kas
-
-- [x] Pengumuman RT
-
-- [x] Sistem login (admin dan warga)
-
-## Fitur yang Diimplementasikan
-
-Fitur yang telah berhasil diimplementasikan dalam sistem:
-
-- [x] Manajemen data penduduk (CRUD)
-
-- [x] Pengajuan dan proses surat oleh warga dan admin
-
-- [x] Monitoring status surat (tungggu, diproses. dan selesai)
-
-- [x] Kalender kegiatan lingkungan
-
-- [x] Pencatatan keuangan kas RT
-
-- [x] Sistem pengumuman terpusat
-
-- [x] Hak akses berdasarkan role (admin dan warga)
-
-## Pengujian Fungsional
-
-Pengujian dilakukan untuk memastikan sistem berjalan dengan baik:
-
-- [x] Input data penduduk → data tersimpan dengan benar ✓
-
-- [x] Ajukan surat → muncul di dashboard admin ✓
-
-- [x] Ubah status surat → warga dapat melihat perubahan ✓
-
-- [x] Tambah kegiatan → tampil di kalender ✓
-
-- [x] Input kas → data keuangan tampil sesuai ✓
-
-- [x] Pengumuman dibuat → muncul di halaman warga ✓
-
 # Dokumentasi Proyek
 
 ## Struktur Library
