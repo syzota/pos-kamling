@@ -28,19 +28,17 @@ Melalui aplikasi ini, proses pengajuan surat menjadi lebih praktis, data pendudu
 
 ## Fitur Login dan Logout
 
-### 1. Login Admin (Ketua RT)
+### 1. Fitur Login (Admin dan Warga)
 
-Fitur login admin digunakan oleh Ketua RT untuk masuk ke dalam sistem menggunakan akun yang telah terdaftar. Ketua RT memasukkan data seperti NIK, password, dan informasi pendukung lainnya yang sudah tersimpan di database. Sistem akan melakukan proses autentikasi untuk memastikan bahwa data yang dimasukkan sesuai. Jika berhasil, admin akan diarahkan ke halaman dashboard khusus yang memiliki akses penuh untuk mengelola data penduduk, surat, keuangan, kegiatan, dan pengumuman.
+Fitur login digunakan sebagai proses autentikasi untuk memastikan bahwa hanya pengguna yang terdaftar yang dapat mengakses sistem. Baik Ketua RT (admin) maupun warga melakukan login dengan memasukkan data seperti NIK dan password yang telah tersimpan di database. Sistem kemudian akan memverifikasi kecocokan data tersebut. Setelah proses autentikasi berhasil, sistem secara otomatis mengidentifikasi peran pengguna, apakah sebagai admin atau warga, dan mengarahkan ke halaman yang sesuai.
 
-### 2. Login Warga
+Jika yang login adalah Ketua RT, maka pengguna akan diarahkan ke dashboard admin yang memiliki akses penuh untuk mengelola data penduduk, surat pengantar, keuangan, kegiatan, dan pengumuman. Sedangkan jika yang login adalah warga, maka pengguna akan diarahkan ke halaman utama dengan akses terbatas, seperti melihat pengumuman, mengajukan surat, melihat kegiatan, serta memantau transparansi dana. Dengan adanya pembagian hak akses ini, sistem dapat menjaga keamanan data sekaligus memastikan setiap pengguna hanya mengakses fitur sesuai dengan perannya.
 
-Fitur login warga digunakan oleh masyarakat untuk mengakses aplikasi sesuai dengan hak aksesnya. Warga memasukkan data login seperti NIK dan password, kemudian sistem akan memverifikasi data tersebut. Setelah berhasil login, warga akan diarahkan ke halaman utama yang berisi fitur seperti melihat pengumuman, mengajukan surat, melihat kegiatan, dan memantau transparansi dana. Hak akses warga lebih terbatas dibandingkan admin agar keamanan data tetap terjaga.
-
-### 3. Sistem Autentikasi dan Hak Akses
+### 2. Sistem Autentikasi dan Hak Akses
 
 Pada saat proses login, sistem tidak hanya memverifikasi data pengguna, tetapi juga menentukan peran pengguna (admin atau warga). Berdasarkan peran tersebut, sistem akan mengarahkan pengguna ke tampilan dan fitur yang sesuai. Dengan adanya pembagian hak akses ini, setiap pengguna hanya dapat mengakses fitur yang diperbolehkan, sehingga keamanan dan pengelolaan sistem menjadi lebih terkontrol.
 
-### 4. Logout (Keluar dari Sistem)
+### 3. Logout (Keluar dari Sistem)
 
 Fitur logout digunakan oleh admin maupun warga untuk keluar dari aplikasi. Ketika pengguna melakukan logout, sistem akan menghapus sesi login yang sedang aktif sehingga pengguna harus melakukan login kembali untuk mengakses aplikasi. Hal ini penting untuk menjaga keamanan akun, terutama jika aplikasi digunakan pada perangkat bersama.
 
@@ -66,6 +64,14 @@ Fitur ini digunakan untuk mencatat dan mengelola keuangan kas RT secara digital.
 
 Fitur ini digunakan untuk menyampaikan informasi penting kepada warga secara cepat dan efisien. Ketua RT dapat membuat, mengubah, dan menghapus pengumuman sesuai kebutuhan. Informasi yang disampaikan akan langsung ditampilkan di aplikasi warga, sehingga penyampaian informasi menjadi lebih praktis dan tidak bergantung pada metode manual.
 
+### 6. Dashboard Admin
+
+Tampilan Dashboard Admin merupakan halaman utama yang diakses oleh Ketua RT setelah berhasil login ke dalam sistem. Halaman ini berfungsi sebagai pusat informasi yang menampilkan ringkasan kondisi lingkungan secara cepat dan terstruktur. Pada bagian atas terdapat elemen navigasi seperti menu, notifikasi, dan logout yang memudahkan pengguna dalam mengakses fitur lain atau keluar dari aplikasi. Selanjutnya, terdapat ringkasan data berupa total warga dan jumlah surat yang masih dalam status pending, sehingga Ketua RT dapat langsung mengetahui kondisi administrasi yang perlu diperhatikan.
+
+Selain itu, dashboard juga menampilkan informasi saldo kas RT bulan berjalan yang memberikan gambaran mengenai kondisi keuangan secara real-time. Di bawahnya terdapat daftar surat pending yang berisi pengajuan surat dari warga yang belum diproses, lengkap dengan tombol aksi untuk menindaklanjuti setiap pengajuan. Hal ini mempermudah Ketua RT dalam mengelola administrasi secara lebih efisien. Terdapat pula bagian transaksi terbaru yang menampilkan aktivitas keuangan terakhir, sehingga memudahkan pemantauan arus kas.
+
+Pada bagian bawah, tersedia tombol aksi cepat untuk menambahkan pengumuman baru yang dapat langsung disampaikan kepada warga. Selain itu, terdapat menu navigasi utama yang memungkinkan pengguna berpindah ke halaman lain seperti data warga, surat, keuangan, kegiatan, dan pengumuman.
+
 ## Fitur Warga
 
 ### 1. Lihat Kalender Kegiatan
@@ -87,6 +93,10 @@ Fitur ini memungkinkan warga untuk melihat data pribadi yang tersimpan dalam sis
 ### 5. Lihat Pengumuman RT
 
 Fitur ini digunakan untuk menampilkan berbagai pengumuman penting yang disampaikan oleh Ketua RT kepada warga. Informasi seperti kegiatan, kebijakan, atau pemberitahuan lainnya dapat langsung diakses melalui aplikasi. Dengan demikian, penyampaian informasi menjadi lebih cepat dan tidak terlewat oleh warga.
+
+### 6. Dashboard Warga
+
+Dashboard Warga merupakan halaman utama yang menampilkan informasi penting secara ringkas kepada pengguna. Pada bagian atas terdapat pengumuman terbaru dari Ketua RT agar warga selalu mendapatkan informasi terkini. Di bawahnya tersedia layanan cepat untuk mengakses fitur utama seperti ajukan surat, kas RT, kalender kegiatan, dan pengumuman. Selain itu, terdapat agenda terdekat yang menampilkan kegiatan yang akan berlangsung, serta status iuran yang menunjukkan apakah pembayaran sudah lunas atau belum. Menu navigasi di bagian bawah memudahkan warga berpindah ke fitur lain dengan cepat.
 
 # Widget yang Digunakan
 
@@ -225,3 +235,38 @@ Fitur ini digunakan untuk menampilkan berbagai pengumuman penting yang disampaik
 10. Tampilan Tambahan
     - cupertino_icons digunakan untuk menyediakan ikon bergaya iOS.
     - flutter_native_splash digunakan untuk membuat tampilan splash screen saat aplikasi pertama kali dibuka.
+
+# Dokumentasi 
+## 1. Login (Admin dan Warga)
+
+<img width="973" height="1732" alt="image" src="https://github.com/user-attachments/assets/eb1eb9e1-906d-46d2-88bf-72a19b44afcb" />
+
+## 2. Logout
+
+<img width="972" height="1735" alt="image" src="https://github.com/user-attachments/assets/4190e9c0-4a48-4b7a-b43f-d4d8f420f5e2" />
+
+## 3. Dashboard Admin
+
+<img width="961" height="1734" alt="image" src="https://github.com/user-attachments/assets/4797cf0e-b6fb-428c-9562-78b9a96fad56" />
+
+## 4. Kelola Data Penduduk
+
+<img width="969" height="1722" alt="image" src="https://github.com/user-attachments/assets/a9153d46-a31e-499d-bdb3-74d8fb13dfed" />
+
+## 5. Kelola Surat Pengantar
+
+<img width="978" height="1720" alt="image" src="https://github.com/user-attachments/assets/81329ad4-04fc-4eaa-bc07-7f271cb621a8" />
+
+## 6. Kelola Dana Kas RT
+
+<img width="973" height="1262" alt="image" src="https://github.com/user-attachments/assets/a37474dc-58cf-428f-b616-239afaf6e7e3" />
+
+## 7. Kelola Kalender Kegiatan
+
+## 8. Kelola Pengumuman
+
+## 9. Dashboard Warga
+
+<img width="968" height="1727" alt="image" src="https://github.com/user-attachments/assets/3fbc4444-325e-4026-a456-3914b7292522" />
+
+## 10. 
