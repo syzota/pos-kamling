@@ -22,61 +22,71 @@ Oleh karena itu, aplikasi ini dikembangkan sebagai solusi digital yang terintegr
 
 Melalui aplikasi ini, proses pengajuan surat menjadi lebih praktis, data penduduk dapat dikelola dengan lebih terstruktur, serta informasi kegiatan dan keuangan RT dapat disampaikan secara transparan kepada seluruh warga.
 
-# Dokumentasi Proyek
-
 ## Struktur Library
+
+# Fitur Aplikasi
+
+## Fitur Login dan Logout
+
+### 1. Login Admin (Ketua RT)
+
+Fitur login admin digunakan oleh Ketua RT untuk masuk ke dalam sistem menggunakan akun yang telah terdaftar. Ketua RT memasukkan data seperti NIK, password, dan informasi pendukung lainnya yang sudah tersimpan di database. Sistem akan melakukan proses autentikasi untuk memastikan bahwa data yang dimasukkan sesuai. Jika berhasil, admin akan diarahkan ke halaman dashboard khusus yang memiliki akses penuh untuk mengelola data penduduk, surat, keuangan, kegiatan, dan pengumuman.
+
+### 2. Login Warga
+
+Fitur login warga digunakan oleh masyarakat untuk mengakses aplikasi sesuai dengan hak aksesnya. Warga memasukkan data login seperti NIK dan password, kemudian sistem akan memverifikasi data tersebut. Setelah berhasil login, warga akan diarahkan ke halaman utama yang berisi fitur seperti melihat pengumuman, mengajukan surat, melihat kegiatan, dan memantau transparansi dana. Hak akses warga lebih terbatas dibandingkan admin agar keamanan data tetap terjaga.
+
+### 3. Sistem Autentikasi dan Hak Akses
+
+Pada saat proses login, sistem tidak hanya memverifikasi data pengguna, tetapi juga menentukan peran pengguna (admin atau warga). Berdasarkan peran tersebut, sistem akan mengarahkan pengguna ke tampilan dan fitur yang sesuai. Dengan adanya pembagian hak akses ini, setiap pengguna hanya dapat mengakses fitur yang diperbolehkan, sehingga keamanan dan pengelolaan sistem menjadi lebih terkontrol.
+
+### 4. Logout (Keluar dari Sistem)
+
+Fitur logout digunakan oleh admin maupun warga untuk keluar dari aplikasi. Ketika pengguna melakukan logout, sistem akan menghapus sesi login yang sedang aktif sehingga pengguna harus melakukan login kembali untuk mengakses aplikasi. Hal ini penting untuk menjaga keamanan akun, terutama jika aplikasi digunakan pada perangkat bersama.
 
 ## Fitur Ketua RT (Admin)
 
 ### 1. Kelola Data Penduduk
 
-Ketua RT dapat mengelola seluruh data warga secara terpusat, mulai dari menambahkan, mengubah, hingga memperbarui informasi penduduk. Dengan fitur ini, data warga menjadi lebih terstruktur, mudah diakses, dan selalu terjaga keakuratannya.
+Fitur ini digunakan oleh Ketua RT untuk mengelola seluruh data warga dalam satu sistem terpusat. Melalui fitur ini, Ketua RT dapat menambahkan data penduduk baru, memperbarui informasi yang sudah ada, serta memastikan setiap data tersimpan dengan rapi dan akurat. Dengan adanya sistem digital, proses pencarian dan pengelolaan data menjadi lebih mudah dibandingkan pencatatan manual.
 
 ### 2. Kelola Surat Pengantar
 
-Fitur ini memungkinkan Ketua RT untuk memproses permintaan surat yang diajukan oleh warga. Ketua RT dapat melihat daftar pengajuan, memverifikasi, serta mengubah status surat menjadi diproses atau selesai, sehingga proses administrasi menjadi lebih cepat dan terpantau.
+Fitur ini berfungsi untuk mempermudah proses administrasi surat antara warga dan Ketua RT. Warga dapat mengajukan permohonan surat melalui aplikasi, kemudian Ketua RT dapat memeriksa dan memverifikasi pengajuan tersebut. Selain itu, Ketua RT juga dapat mengubah status surat, seperti diproses atau selesai, sehingga seluruh proses menjadi lebih cepat, transparan, dan terpantau.
 
 ### 3. Kelola Kalender Kegiatan
 
-Ketua RT dapat membuat dan mengatur jadwal kegiatan lingkungan. Informasi kegiatan yang ditambahkan akan langsung dapat diakses oleh warga, sehingga memudahkan koordinasi dan penyampaian informasi.
+Fitur ini memungkinkan Ketua RT untuk membuat dan mengatur jadwal kegiatan di lingkungan RT. Informasi kegiatan yang ditambahkan akan langsung tersedia dalam aplikasi dan dapat diakses oleh warga. Dengan demikian, warga dapat mengetahui jadwal kegiatan dengan lebih mudah, sehingga koordinasi dan partisipasi dalam kegiatan lingkungan menjadi lebih baik.
 
 ### 4. Kelola Dana Kas RT
 
-Melalui fitur ini, Ketua RT dapat mencatat setiap pemasukan dan pengeluaran kas RT. Hal ini membantu dalam pengelolaan keuangan yang lebih rapi serta mendukung transparansi kepada warga.
+Fitur ini digunakan untuk mencatat dan mengelola keuangan kas RT secara digital. Ketua RT dapat mencatat setiap pemasukan dan pengeluaran dengan lebih terstruktur. Data keuangan yang tersimpan dapat dipantau kembali kapan saja, sehingga membantu menjaga transparansi dan akuntabilitas dalam pengelolaan dana kepada seluruh warga.
 
 ### 5. Kelola Pengumuman
 
-Ketua RT dapat membuat, mengubah, dan menyampaikan pengumuman penting kepada seluruh warga. Informasi yang disampaikan menjadi lebih cepat diterima dan tidak bergantung pada metode manual.
-
-### 6. Login dan Logout
-
-Fitur logout digunakan untuk keluar dari sistem guna menjaga keamanan akun. Hal ini penting agar akses ke sistem tetap aman dan hanya digunakan oleh pihak yang berwenang.
+Fitur ini digunakan untuk menyampaikan informasi penting kepada warga secara cepat dan efisien. Ketua RT dapat membuat, mengubah, dan menghapus pengumuman sesuai kebutuhan. Informasi yang disampaikan akan langsung ditampilkan di aplikasi warga, sehingga penyampaian informasi menjadi lebih praktis dan tidak bergantung pada metode manual.
 
 ## Fitur Warga
 
 ### 1. Lihat Kalender Kegiatan
 
-Warga dapat melihat jadwal kegiatan yang telah dibuat oleh Ketua RT. Dengan fitur ini, warga dapat mengetahui informasi kegiatan secara langsung dan tidak ketinggalan agenda lingkungan.
+Fitur ini memungkinkan warga untuk melihat jadwal kegiatan yang telah dibuat oleh Ketua RT melalui aplikasi. Informasi seperti tanggal, jenis kegiatan, dan detail acara dapat diakses dengan mudah. Dengan adanya fitur ini, warga tidak akan ketinggalan informasi terkait kegiatan lingkungan dan dapat mempersiapkan diri untuk berpartisipasi.
 
 ### 2. Lihat Transparansi Dana
 
-Warga dapat mengakses informasi terkait pemasukan dan pengeluaran dana kas RT. Hal ini memberikan transparansi sehingga warga dapat mengetahui kondisi keuangan lingkungan secara terbuka.
+Fitur ini memberikan akses kepada warga untuk melihat laporan keuangan kas RT, baik pemasukan maupun pengeluaran. Setiap transaksi dicatat secara sistematis sehingga warga dapat mengetahui kondisi keuangan lingkungan secara terbuka. Hal ini bertujuan untuk meningkatkan kepercayaan dan transparansi dalam pengelolaan dana.
 
 ### 3. Ajukan Surat
 
-Warga dapat mengajukan permintaan surat pengantar secara online tanpa harus datang langsung. Proses ini membuat pelayanan menjadi lebih praktis dan efisien.
+Melalui fitur ini, warga dapat mengajukan permohonan surat pengantar secara online tanpa perlu datang langsung ke Ketua RT. Warga hanya perlu mengisi data yang dibutuhkan melalui aplikasi. Setelah itu, pengajuan akan diproses oleh Ketua RT. Fitur ini membuat proses administrasi menjadi lebih praktis, cepat, dan efisien.
 
 ### 4. Cek Status Penduduk
 
-Warga dapat melihat data dan status dirinya yang tersimpan dalam sistem. Fitur ini membantu memastikan bahwa data yang dimiliki oleh RT sudah benar dan sesuai.
+Fitur ini memungkinkan warga untuk melihat data pribadi yang tersimpan dalam sistem, seperti identitas dan status kependudukan. Dengan adanya fitur ini, warga dapat memastikan bahwa data yang dimiliki oleh Ketua RT sudah benar dan sesuai. Jika terdapat kesalahan, warga dapat segera melakukan pembaruan data.
 
 ### 5. Lihat Pengumuman RT
 
-Warga dapat membaca berbagai pengumuman penting yang disampaikan oleh Ketua RT, seperti informasi kegiatan, kebijakan, atau pemberitahuan lainnya.
-
-### 6. Login dan Logout
-
-Fitur logout digunakan untuk keluar dari sistem setelah selesai digunakan, sehingga keamanan akun tetap terjaga.
+Fitur ini digunakan untuk menampilkan berbagai pengumuman penting yang disampaikan oleh Ketua RT kepada warga. Informasi seperti kegiatan, kebijakan, atau pemberitahuan lainnya dapat langsung diakses melalui aplikasi. Dengan demikian, penyampaian informasi menjadi lebih cepat dan tidak terlewat oleh warga.
 
 # Widget yang Digunakan
 
