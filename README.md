@@ -263,10 +263,30 @@ Dashboard Warga merupakan halaman utama yang menampilkan informasi penting secar
 
 ## 7. Kelola Kalender Kegiatan
 
+<img width="961" height="1728" alt="image" src="https://github.com/user-attachments/assets/8e6a2d86-49fd-4a56-abbb-58ce142d4551" />
+
 ## 8. Kelola Pengumuman
+
+<img width="971" height="1721" alt="image" src="https://github.com/user-attachments/assets/f0527989-98b1-4511-8dec-9aad39fefb9d" />
 
 ## 9. Dashboard Warga
 
 <img width="968" height="1727" alt="image" src="https://github.com/user-attachments/assets/3fbc4444-325e-4026-a456-3914b7292522" />
 
-## 10. 
+## 10. Lihat Kalender Kegiatan
+
+<img width="966" height="1602" alt="image" src="https://github.com/user-attachments/assets/a0cb6fa8-511a-447c-9fb8-70ac9c63dab3" />
+
+## 11. Lihat Transparansi Dana
+
+<img width="964" height="1585" alt="image" src="https://github.com/user-attachments/assets/0b428307-0aa6-4328-9a33-9f7bc8059657" />
+
+## 12. Ajukan Surat
+
+<img width="962" height="1573" alt="image" src="https://github.com/user-attachments/assets/55637f97-321d-4987-9e66-50a497f6bd6b" />
+
+## 13. Cek Status Penduduk
+
+<img width="977" height="1584" alt="image" src="https://github.com/user-attachments/assets/44ad436d-75aa-4e7f-aa91-da2e4f4fec52" />
+
+## 14. Lihat Pengumuman RT
