@@ -80,44 +80,138 @@ Fitur logout digunakan untuk keluar dari sistem setelah selesai digunakan, sehin
 
 # Widget yang Digunakan
 
-1. Widget Utama (Struktur Halaman)
-   - Scaffold digunakan sebagai kerangka utama halaman untuk menampilkan AppBar, body, dan komponen lainnya.
-   - AppBar digunakan sebagai bagian header untuk menampilkan judul halaman dan navigasi.
-   - SafeArea digunakan agar tampilan tidak tertutup oleh notch atau sistem UI perangkat.
-   - Container digunakan sebagai wadah utama untuk menampung dan mengatur tampilan komponen.
-   - Padding dan SizedBox digunakan untuk mengatur jarak antar elemen.
-   - Column dan Row digunakan untuk menyusun layout secara vertikal dan horizontal.
-   - Expanded dan Flexible digunakan untuk mengatur pembagian ruang secara responsif.
+1. Widget pada Entry Point
+   - ```GetMaterialApp``` digunakan pada main.dart sebagai root aplikasi untuk mengatur navigasi dan state management menggunakan GetX.
+   - ```ThemeData``` digunakan pada app_theme.dart untuk mengatur tampilan global seperti warna dan font.
+   - ```GetPage``` digunakan pada app_routes.dart untuk menghubungkan setiap halaman (view) dengan binding dan route.
+     
+2. Widget pada Halaman Dashboard (Admin & Warga)
+
+    Digunakan di: ```admin_dashboard_view.dart``` dan ```warga_dashboard_view.dart```.
+   - ```Scaffold``` digunakan sebagai struktur utama halaman dashboard.
+   - ```AppBar``` digunakan untuk menampilkan judul dashboard.
+   - ```Column``` dan ```Row``` digunakan untuk menyusun layout statistik dan menu.
+   - ```Expanded``` digunakan untuk membagi ruang antar komponen dashboard.
+   - ```Obx``` digunakan untuk menampilkan data statistik yang berubah secara realtime dari controller.
+   - ```Card``` digunakan untuk menampilkan ringkasan data seperti jumlah warga, kegiatan, atau keuangan.
+   - ```FlChart``` (BarChart/LineChart) digunakan untuk menampilkan grafik data keuangan atau statistik.
    
-2. Widget Penampil Data
-   - ListView digunakan untuk menampilkan data dalam bentuk daftar.
-   - ListView.builder digunakan untuk menampilkan data secara dinamis dari database.
-   - Card digunakan sebagai pembungkus item agar tampil lebih rapi dan terstruktur.
-   - ListTile digunakan untuk menampilkan informasi sederhana seperti judul dan subtitle dalam list.
+4. Widget pada Halaman Kegiatan
+   - ```ListView.builder``` digunakan untuk menampilkan daftar kegiatan dari database.
+   - ```Card``` digunakan untuk membungkus setiap item kegiatan.
+   - ```Text``` digunakan untuk menampilkan judul dan deskripsi kegiatan.
+   - ```Obx``` digunakan untuk filter data kegiatan (upcoming, ongoing, selesai).
+   - ```Container``` digunakan untuk styling tiap item kegiatan.
      
-3. Widget Reactive (GetX)
-   - Obx digunakan untuk membuat tampilan otomatis berubah ketika data pada controller berubah.
-   - GetView digunakan untuk menghubungkan view dengan controller tanpa perlu inisialisasi ulang.
+5. Widget pada Halaman Pengumuman
+
+    Digunakan di: ```admin_announcement_view.dart``` dan ```announcement_view.dart```.
+   - ```ListView``` digunakan untuk menampilkan daftar pengumuman.
+   - ```Card``` digunakan untuk menampilkan isi pengumuman.
+   - ```TextFormField``` digunakan untuk input pengumuman (admin).
+   - ```Form``` digunakan untuk validasi input pengumuman.
+   - ```Obx``` digunakan untuk update daftar pengumuman secara realtime.
      
-4. Widget Input dan Form
-   - TextField digunakan untuk input teks sederhana.
-   - TextFormField digunakan untuk input dengan validasi.
-   - Form digunakan untuk membungkus beberapa input agar bisa divalidasi sekaligus.
-   - DropdownButton digunakan untuk memilih data dari beberapa opsi.
+6. Widget pada Halaman Keuangan
+
+    Digunakan di: ```admin_finance_view.dart``` dan ```warga_finance_view.dart```.
+   - ```ListView.builder``` digunakan untuk menampilkan transaksi keuangan.
+   - ```Card``` digunakan untuk setiap item pemasukan/pengeluaran.
+   - ```DropdownButton``` digunakan untuk memilih jenis transaksi.
+   - ```TextField``` digunakan untuk input nominal.
+   - ```Obx``` digunakan untuk memperbarui total keuangan secara realtime.
      
-5. Widget Navigasi (GetX)
-   - GetMaterialApp digunakan sebagai root aplikasi untuk mendukung navigasi GetX.
-   - GetPage digunakan untuk mendefinisikan routing antar halaman.
-   - Get.to() digunakan untuk berpindah halaman.
-   - Get.back() digunakan untuk kembali ke halaman sebelumnya.
+7. Widget pada Halaman Surat
+
+    Digunakan di: ```admin_letters_view.dart``` dan ```letter_view.dart```.
+   - ```ListView.builder``` digunakan untuk menampilkan daftar surat.
+   - ```Card``` digunakan untuk menampilkan informasi surat.
+   - ```TextFormField``` digunakan untuk input pengajuan surat.
+   - ```Form``` digunakan untuk validasi data surat.
+   - ```Obx``` digunakan untuk menampilkan status surat secara dinamis.
      
-6. Widget Tampilan Lanjutan (UI Enhancement)
-   - CachedNetworkImage digunakan untuk menampilkan gambar dari internet dengan sistem cache.
-   - Shimmer digunakan untuk menampilkan efek loading (skeleton).
-   - FancyShimmerImage digunakan sebagai kombinasi gambar dengan efek loading.
-   - TableCalendar digunakan untuk menampilkan kalender interaktif.
-   - FlChart digunakan untuk menampilkan grafik seperti diagram batang dan garis.
+8. Widget pada Halaman Data Warga
+   - ```ListView.builder``` digunakan untuk menampilkan data penduduk.
+   - ```Card``` digunakan untuk menampilkan informasi warga.
+   - ```Text``` digunakan untuk menampilkan nama, alamat, dll.
+   - ```Obx``` digunakan untuk update data secara realtime.
      
-7. Custom Widget
-10. Widget/Komponen Notifikasi
-11. Komponen Non-Widget (Pendukung)
+9. Widget pada Halaman Kalender
+   - ```TableCalendar``` digunakan untuk menampilkan kalender kegiatan.
+   - ```Obx``` digunakan untuk menampilkan event berdasarkan tanggal yang dipilih.
+   - ```Container``` digunakan untuk menampilkan detail kegiatan.
+     
+10. Widget pada Halaman Notifikasi
+
+   Digunakan di: ```admin_notification_view.dart``` dan ```warga_notification_view.dart```.
+    - ```ListView.builder``` digunakan untuk daftar notifikasi.
+    - ```ListTile``` digunakan untuk menampilkan notifikasi sederhana.
+    - ```Obx``` digunakan untuk memperbarui notifikasi secara realtime.
+      
+11. Widget pada Halaman Profil
+
+     Digunakan di: ```admin_profile_view.dart``` dan ```warga_profile_view.dart```.
+    - ```Column``` digunakan untuk menyusun data profil.
+    - ```Text``` digunakan untuk menampilkan informasi pengguna.
+    - ```TextField``` digunakan untuk edit profil.
+    - ```Obx``` digunakan untuk menampilkan data profil secara dinamis.
+
+12. Custom Widget yang Digunakan
+    - ```Stack``` digunakan untuk menumpuk background dan konten.
+    - ```Container``` dan ```DecorationImage``` digunakan untuk menampilkan gambar latar.
+    - ```ClipRRect``` digunakan untuk membuat sudut membulat.
+    - ```BackdropFilter``` dan ```ImageFilter.blur``` digunakan untuk efek kaca (glassmorphism).
+    - ```Container``` digunakan sebagai wadah isi.
+    - ```Container``` dan ```BoxDecoration``` digunakan untuk membuat tombol dengan efek gradient.
+    - ```GestureDetector``` digunakan untuk menangani klik tombol.
+    - ```CachedNetworkImage``` digunakan untuk menampilkan gambar dari internet.
+    - ```Shimmer``` digunakan untuk efek loading gambar.
+
+13. Widget Pendukung dari Library
+    - ```CachedNetworkImage``` untuk menampilkan gambar dari URL dengan cache.
+    - ```Shimmer``` → efek loading.
+    - ```FancyShimmerImage``` → kombinasi gambar + loading.
+    - ```FlChart``` → grafik data.
+    - ```TableCalendar``` → kalender.
+   
+14. Komponen Non-Widget
+    - Controller (GetxController) digunakan untuk mengatur state dan logika aplikasi.
+    - Binding digunakan untuk menghubungkan controller dengan view.
+    - Repository digunakan untuk mengambil dan mengelola data dari Supabase.
+    - Provider digunakan untuk koneksi ke backend dan storage.
+    - Model digunakan untuk struktur data aplikasi.
+   
+# Package yang Digunakan
+
+1. Core Framework
+   - flutter digunakan sebagai framework utama untuk membangun aplikasi mobile berbasis widget, seperti Scaffold, Container, dan ListView.
+2. State Management & Navigasi
+   - get (GetX) digunakan untuk mengelola state aplikasi, navigasi antar halaman, serta dependency injection. Pada project ini digunakan melalui Obx, GetMaterialApp, GetPage, dan Binding–Controller.
+3. Backend & Database
+   - supabase_flutter digunakan sebagai backend untuk autentikasi pengguna, pengelolaan database PostgreSQL, dan penyimpanan data. Digunakan pada layer repository.
+   - flutter_dotenv digunakan untuk membaca file .env yang berisi konfigurasi seperti URL dan API Key Supabase.
+4. UI & Tampilan
+   - google_fonts digunakan untuk mengatur jenis font agar tampilan aplikasi lebih menarik.
+   - cached_network_image digunakan untuk menampilkan gambar dari internet dengan sistem cache agar lebih efisien.
+   - shimmer digunakan untuk memberikan efek loading (skeleton screen) saat data sedang dimuat.
+   - fancy_shimmer_image digunakan untuk menampilkan gambar dengan efek loading yang lebih praktis.
+5. Visualisasi & Kalender
+   - fl_chart digunakan untuk menampilkan grafik seperti diagram batang atau garis pada dashboard.
+   - table_calendar digunakan untuk menampilkan kalender interaktif pada fitur kegiatan.
+6. Format & Utility
+   - intl digunakan untuk format tanggal, angka, dan mata uang.
+   - uuid digunakan untuk membuat ID unik pada data.
+   - equatable digunakan untuk mempermudah perbandingan object pada model data.
+7. File & Media
+   - image_picker digunakan untuk mengambil gambar dari kamera atau galeri.
+   - file_picker digunakan untuk memilih file seperti PDF atau dokumen.
+   - path_provider digunakan untuk mengakses direktori penyimpanan lokal perangkat.
+8. Integrasi Device
+   - url_launcher digunakan untuk membuka link, browser, atau aplikasi lain seperti WhatsApp.
+   - share_plus digunakan untuk membagikan konten ke aplikasi lain.
+9. Notifikasi & Keamanan
+   - flutter_local_notifications digunakan untuk menampilkan notifikasi lokal pada perangkat.
+   - flutter_secure_storage digunakan untuk menyimpan data sensitif seperti token secara aman.
+10. Tampilan Tambahan
+    - cupertino_icons digunakan untuk menyediakan ikon bergaya iOS.
+    - flutter_native_splash digunakan untuk membuat tampilan splash screen saat aplikasi pertama kali dibuka.
