@@ -22,8 +22,6 @@ Oleh karena itu, aplikasi ini dikembangkan sebagai solusi digital yang terintegr
 
 Melalui aplikasi ini, proses pengajuan surat menjadi lebih praktis, data penduduk dapat dikelola dengan lebih terstruktur, serta informasi kegiatan dan keuangan RT dapat disampaikan secara transparan kepada seluruh warga.
 
-## Struktur Library
-
 # Fitur Aplikasi
 
 ## Fitur Login dan Logout
