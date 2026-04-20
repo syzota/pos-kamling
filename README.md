@@ -96,9 +96,28 @@ Fitur logout digunakan untuk keluar dari sistem setelah selesai digunakan, sehin
    - ListTile digunakan untuk menampilkan informasi sederhana seperti judul dan subtitle dalam list.
      
 3. Widget Reactive (GetX)
-6. Widget Input dan Form
-7. Widget Navigasi (GetX)
-8. Widget Tampilan Lanjutan (UI Enhancement)
-9. Custom Widget
+   - Obx digunakan untuk membuat tampilan otomatis berubah ketika data pada controller berubah.
+   - GetView digunakan untuk menghubungkan view dengan controller tanpa perlu inisialisasi ulang.
+     
+4. Widget Input dan Form
+   - TextField digunakan untuk input teks sederhana.
+   - TextFormField digunakan untuk input dengan validasi.
+   - Form digunakan untuk membungkus beberapa input agar bisa divalidasi sekaligus.
+   - DropdownButton digunakan untuk memilih data dari beberapa opsi.
+     
+5. Widget Navigasi (GetX)
+   - GetMaterialApp digunakan sebagai root aplikasi untuk mendukung navigasi GetX.
+   - GetPage digunakan untuk mendefinisikan routing antar halaman.
+   - Get.to() digunakan untuk berpindah halaman.
+   - Get.back() digunakan untuk kembali ke halaman sebelumnya.
+     
+6. Widget Tampilan Lanjutan (UI Enhancement)
+   - CachedNetworkImage digunakan untuk menampilkan gambar dari internet dengan sistem cache.
+   - Shimmer digunakan untuk menampilkan efek loading (skeleton).
+   - FancyShimmerImage digunakan sebagai kombinasi gambar dengan efek loading.
+   - TableCalendar digunakan untuk menampilkan kalender interaktif.
+   - FlChart digunakan untuk menampilkan grafik seperti diagram batang dan garis.
+     
+7. Custom Widget
 10. Widget/Komponen Notifikasi
 11. Komponen Non-Widget (Pendukung)
