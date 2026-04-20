@@ -79,3 +79,26 @@ Warga dapat membaca berbagai pengumuman penting yang disampaikan oleh Ketua RT, 
 Fitur logout digunakan untuk keluar dari sistem setelah selesai digunakan, sehingga keamanan akun tetap terjaga.
 
 # Widget yang Digunakan
+
+1. Widget Utama (Struktur Halaman)
+   - Scaffold digunakan sebagai kerangka utama halaman untuk menampilkan AppBar, body, dan komponen lainnya.
+   - AppBar digunakan sebagai bagian header untuk menampilkan judul halaman dan navigasi.
+   - SafeArea digunakan agar tampilan tidak tertutup oleh notch atau sistem UI perangkat.
+   - Container digunakan sebagai wadah utama untuk menampung dan mengatur tampilan komponen.
+   - Padding dan SizedBox digunakan untuk mengatur jarak antar elemen.
+   - Column dan Row digunakan untuk menyusun layout secara vertikal dan horizontal.
+   - Expanded dan Flexible digunakan untuk mengatur pembagian ruang secara responsif.
+   
+2. Widget Penampil Data
+   - ListView digunakan untuk menampilkan data dalam bentuk daftar.
+   - ListView.builder digunakan untuk menampilkan data secara dinamis dari database.
+   - Card digunakan sebagai pembungkus item agar tampil lebih rapi dan terstruktur.
+   - ListTile digunakan untuk menampilkan informasi sederhana seperti judul dan subtitle dalam list.
+     
+3. Widget Reactive (GetX)
+6. Widget Input dan Form
+7. Widget Navigasi (GetX)
+8. Widget Tampilan Lanjutan (UI Enhancement)
+9. Custom Widget
+10. Widget/Komponen Notifikasi
+11. Komponen Non-Widget (Pendukung)
