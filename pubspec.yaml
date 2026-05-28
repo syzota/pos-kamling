@@ -1,0 +1,81 @@
+name: pos_kamling
+description: "Manajemen RT Digital."
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: ^3.10.8
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  get: ^4.6.6
+  supabase_flutter: ^2.12.2
+  flutter_dotenv: ^5.1.0
+
+  google_fonts: ^6.1.0
+  cached_network_image: ^3.3.1
+  shimmer: ^3.0.0
+  fl_chart: ^0.67.0
+  table_calendar: ^3.1.0
+
+  intl: ^0.19.0
+  image_picker: ^1.0.7
+  file_picker: ^8.0.0
+  url_launcher: ^6.2.4
+  share_plus: ^10.0.0
+  path_provider: ^2.1.2
+  uuid: ^4.3.3
+  equatable: ^2.0.5
+
+  cupertino_icons: ^1.0.6
+  flutter_native_splash: ^2.4.7
+  flutter_local_notifications: ^17.0.0
+  flutter_secure_storage: ^9.2.2
+  fancy_shimmer_image: ^2.0.3
+  flutter_launcher_icons: ^0.14.1
+
+  local_auth: ^2.2.0
+  shared_preferences: ^2.2.2
+  qr_flutter: ^4.1.0
+  flutter_animate: ^4.5.0 
+
+  google_maps_flutter: ^2.6.0
+
+  geolocator: ^10.1.0
+  geocoding: ^2.1.1
+  
+  firebase_core: ^4.8.0
+  firebase_messaging: ^16.2.1
+  http: ^1.2.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - .env
+    - assets/images/
+
+flutter_native_splash:
+  android: true
+  ios: true
+  web: true
+
+  background_image: assets/images/pink.jpg
+  image: assets/images/poskamling.png
+
+  android_12:
+    image: assets/images/poskamling.png
+    color: "#F8BBD0"
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: assets/images/poskamling.png
+  adaptive_icon_background: "#F8BBD0"
+  adaptive_icon_foreground: assets/images/poskamling.png
